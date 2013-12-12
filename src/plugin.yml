@@ -1,0 +1,12 @@
+name: NoDropOnDeath
+version: 0.1
+author: rfsantos1996
+main: com.jabyftw.nodrop.NoDropOnDeath
+description: Dont drop items on death
+permissions:
+   nodropondeath.use:
+     description: Don't drop items on death
+     default: true
+   nodropondeath.restore:
+     description: On respawn, will gain have his items
+     default: op
