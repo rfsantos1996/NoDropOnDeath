@@ -34,8 +34,8 @@ public class NoDropOnDeath extends JavaPlugin implements Listener {
         if (p.hasPermission("nodropondeath.restore")) {
             inventory.put(p, p.getInventory().getContents());
             equipment.put(p, p.getInventory().getArmorContents());
-        }
-        if (p.hasPermission("nodropondeath.use")) {
+            e.getDrops().clear();
+        } else if (p.hasPermission("nodropondeath.use")) {
             e.getDrops().clear();
         }
     }
